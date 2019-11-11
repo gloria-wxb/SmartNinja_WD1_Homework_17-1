@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+
+.container {
+    width: 40%;
+    height: 200px;
+    background-color: ivory;
+    margin: 0 auto;
+    padding: 50px 20px;
+    outline: 8px dashed red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    margin-top: 15px;
+}
+
+h2 {
+    font-weight: 700;
+}

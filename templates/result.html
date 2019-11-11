@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Result{% endblock title %}
+
+{% block content %}
+
+{% if correct %}
+    <h2>{{correct_hl}}</h2>
+    <p>{{correct}}</p>
+{% else %}
+    <p>{{message}}</p>
+{% endif %}
+
+    <p><a href="/">Guess again</a></p>
+{% endblock content %}
