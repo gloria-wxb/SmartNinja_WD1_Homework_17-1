@@ -27,16 +27,16 @@ def result():
 
     if guess == secret_number:
         correct_hl = "Congratulations!!!"
-        correct_message = "Correct! The secret number is {0}".format(str(secret_number))
+        correct_message = "Correct! The secret number is {0}.".format(str(secret_number))
         response = make_response(render_template("result.html", correct=correct_message, correct_hl=correct_hl))
         response.set_cookie("secret_number", str(random.randint(1, 30)))
         return response
 
     elif guess > secret_number:
-        message = "Try something smaller..."
+        message = "Sorry, {0} is not correct. Try something smaller...".format(str(guess))
         return render_template("result.html", message=message)
     elif guess < secret_number:
-        message = "Try something bigger..."
+        message = "Sorry, {0} is incorrect. Try something bigger...".format(str(guess))
         return render_template("result.html", message=message)
     elif not guess:
         return render_template("index.html")

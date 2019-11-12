@@ -7,9 +7,10 @@
 {% if correct %}
     <h2>{{correct_hl}}</h2>
     <p>{{correct}}</p>
+    <p><a href="/">New game</a></p>
 {% else %}
     <p>{{message}}</p>
+    <p><a href="/">Guess again</a></p>
 {% endif %}
 
-    <p><a href="/">Guess again</a></p>
 {% endblock content %}

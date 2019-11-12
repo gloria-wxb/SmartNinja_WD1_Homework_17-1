@@ -15,12 +15,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 5%;
 }
 
 button {
-    margin-top: 15px;
+    all: unset;
+    margin-top: 20px;
 }
 
-h2 {
-    font-weight: 700;
+input {
+    padding: 5px;
+    width: 25%;
+    height: 25%;
+    text-align: center;
 }
+
+a:link,
+a:visited,
+button {
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5%;
+}
+
+a:hover,
+button:hover {
+    background-color: firebrick;
+}
+
+a:active,
+button:active {
+    background-color: darkred;
+}
+
